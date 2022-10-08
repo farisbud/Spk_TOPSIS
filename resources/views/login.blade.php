@@ -7,7 +7,7 @@
     <main>
         <div class="container">
             <div class="d-flex align-items-center" style="height: 85vh">
-                <div class="col-md-10">
+                <div class="col-md-11">
                     <div class="row justify-content-center">
                             <div class="card" style="width: 35rem;">
                                 @if (session('pesan'))
@@ -18,7 +18,7 @@
                                 <div class="card-body">
                                 <h5 class="card-title"><center>Login</center></h5>
                                 <h6 class="card-subtitle mb-4 text-muted"><center>SPK TOPSIS</center></h6>
-                                <form action="" method="POST" enctype="multipart/form-data">
+                                <form action="{{ route('log_in') }}" method="POST" enctype="multipart/form-data">
                                     @csrf
                                     <div class="mb-3 row">
                                         <label for="staticEmail" class="col-sm-3 col-form-label">Username</label>
