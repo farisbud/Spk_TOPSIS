@@ -10,7 +10,7 @@ class LoginController extends Controller
 {
     public function __construct()
     {
-        $this->middleware('guest')->except('logout');
+        $this->middleware('guest')->except('log_out');
     }
 
     public function index()
@@ -34,14 +34,14 @@ class LoginController extends Controller
         if(Auth::attempt($credentials))
         {
             $request->session()->regenerate();
-            return redirect()->intended('/home');
+            return redirect()->intended('home');
         }else{
             return back()->with('pesan','user dan password tidak ditemukan');
         }
 
     }
 
-    public function logout(Request $request){
+    public function log_out(Request $request){
 
         Auth::logout();
 

@@ -14,7 +14,12 @@ use App\Http\Controllers\DashboardController;
 |
 */
 
-route::get('/', [LoginController::class, 'index'])->name('login');
-route::post('/login', [LoginController::class,'authenticate'])->name('log_in');
+Route::get('/', [LoginController::class, 'index'])->name('login');
+Route::post('/login', [LoginController::class,'authenticate'])->name('log_in');
 
-route::get('/dashboard',[DashboardController::class,'index']);
+Route::middleware(['auth'])->group(function () {
+
+    Route::post('/logout',[LoginController::class, 'log_out'])->name('log_out');
+    Route::get('/home',[DashboardController::class,'index'])->name('home');
+
+});
