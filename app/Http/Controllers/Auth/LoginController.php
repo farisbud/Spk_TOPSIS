@@ -22,6 +22,7 @@ class LoginController extends Controller
     {
         $message = [
             'required' => ':attribute silahkan di isi dahulu',
+            'min' => ':attribute kurang dari 5 karakter'
         ];
 
         $request->validate([

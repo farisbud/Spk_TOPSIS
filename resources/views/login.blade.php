@@ -11,12 +11,12 @@
                     <div class="row justify-content-center">
                             <div class="card" style="width: 35rem;">
                                 @if (session('pesan'))
-                                <div class="alert alert-success">
+                                <div class="alert alert-danger text-center mt-2">
                                     {{session('pesan')}}
                                 </div>
                                 @endif
                                 <div class="card-body">
-                                <h5 class="card-title"><center>Login</center></h5>
+                                <h2 class="card-title"><center>Login</center></h2>
                                 <h6 class="card-subtitle mb-4 text-muted"><center>SPK TOPSIS</center></h6>
                                 <form action="{{ route('log_in') }}" method="POST" enctype="multipart/form-data">
                                     @csrf
