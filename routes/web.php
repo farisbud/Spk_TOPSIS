@@ -14,8 +14,8 @@ use App\Http\Controllers\DashboardController;
 |
 */
 
-Route::get('/', [LoginController::class, 'index'])->name('login');
-Route::post('/login', [LoginController::class,'authenticate'])->name('log_in');
+Route::get('/', [LoginController::class, 'index'])->name('login')->middleware('guest');
+Route::post('/login', [LoginController::class,'authenticate'])->name('log_in')->middleware('guest');
 
 Route::middleware(['auth'])->group(function () {
 
