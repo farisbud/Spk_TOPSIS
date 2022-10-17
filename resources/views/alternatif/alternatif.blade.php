@@ -8,35 +8,23 @@
           Alternatif
         </div>
         <div class="card-body">
-          <div class="row">
-            <div class="col-sm-4 mb-2">
-              <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">Special title treatment</h5>
-                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-              </div>
+            <div class="table-responsive">
+              <table class="table table-striped table-sm mb-4" id="user_table">
+                <thead>
+                  <tr>
+                      <th>No</th>
+                      <th>NIK</th>
+                      <th>Nama</th>
+                      <th>Telp</th>
+                      <th>Email</th>
+                      <th>Aksi</th>
+                  </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+              </table>
             </div>
-            <div class="col-sm-4 mb-2">
-              <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">Special title treatment</h5>
-                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-              </div>
-            </div>
-             <div class="col-sm-4">
-              <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">Special title treatment</h5>
-                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
     </div>
 </div>
