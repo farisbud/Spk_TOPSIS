@@ -1,37 +1,37 @@
 <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
-    <div class="position-sticky pt-3 sidebar-sticky">
+    <div class="position-sticky pt-3 sidebar-sticky ps-2">
       <ul class="nav flex-column">
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="#">
-            <img src="{{ asset('asset/icon/home.svg') }}" alt="home">
-            <span class="align-text-bottom"></span>
-            Dashboard
+            <img class="align-text-bottom" src="{{ asset('asset/icon/home.svg') }}" width="20" height="20" alt="home">
+            <span class="fs-6">Dashboard</span>
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">
-            <span data-feather="file" class="align-text-bottom"></span>
-            Orders
-          </a>
+            <a class="nav-link active" aria-current="page" href="#">
+              <img class="align-text-bottom" src="{{ asset('asset/icon/home.svg') }}" width="20" height="20" alt="home">
+              <span class="fs-6">Dashboard</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">
+              <img class="align-text-bottom" src="{{ asset('asset/icon/home.svg') }}" width="20" height="20" alt="home">
+              <span>Dashboard</span>
+            </a>
+          </li>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">
-            <span data-feather="shopping-cart" class="align-text-bottom"></span>
-            Products
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">
-            <span data-feather="users" class="align-text-bottom"></span>
-            Customers
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">
-            <span data-feather="bar-chart-2" class="align-text-bottom"></span>
-            Reports
-          </a>
-        </li>
+            <a class="nav-link active" aria-current="page" href="#">
+              <img class="align-text-bottom" src="{{ asset('asset/icon/home.svg') }}" width="20" height="20" alt="home">
+              <span>Dashboard</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">
+              <img class="align-text-bottom" src="{{ asset('asset/icon/home.svg') }}" width="20" height="20" alt="home">
+              <span>Dashboard</span>
+            </a>
+          </li>
         <li class="nav-item">
           <a class="nav-link" href="#">
             <span data-feather="layers" class="align-text-bottom"></span>
