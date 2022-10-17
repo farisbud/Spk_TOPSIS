@@ -14,6 +14,20 @@ class AlternatifController extends Controller
      */
     public function index()
     {
+        $alter = Alternatif::latest()->get();
+            if (request()->ajax()) {
+
+                    return datatables()->of($alter)
+                                        ->addColumn('aksi', function ($alter) {
+                                            $button = " <button class='edit btn btn-secondary' id='" . $alter->id . "' >Edit</button>";
+                                            $button .= "&nbsp;&nbsp;";
+                                            $button .= " <button class='hapus btn btn-danger' id='" . $alter->id . "' >Hapus</button>";
+                                            return $button;
+                                        })
+                                        ->rawColumns(['aksi'])
+                                        ->addIndexColumn()
+                                        ->make(true);
+            }
         return view('alternatif.alternatif');
         //
     }

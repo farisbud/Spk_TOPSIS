@@ -15,17 +15,17 @@ class AlternatifSeeder extends Seeder
     public function run()
     {
         Alternatif::create([
-            'nik' => 'muhammad',
-            'nama_pegawai' => 'muhammad',
-            'telepon' => '0892232321',
-            'email' => 'coba@gmail.com',
+            'nik' => '340202020220',
+            'nama_pegawai' => 'mamat',
+            'telepon' => '0892232322',
+            'email' => 'coba3@gmail.com',
 
         ]);
         Alternatif::create([
-            'nik' => 'user1',
-            'nama_pegawai' => 'user1',
-            'telepon' => '023232323',
-            'email' => 'coba1@gmail.com',
+            'nik' => '34020522323232',
+            'nama_pegawai' => 'surya',
+            'telepon' => '0232328324',
+            'email' => 'coba2@gmail.com',
         ]);
         //
     }
