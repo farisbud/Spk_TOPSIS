@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\AlternatifController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -21,5 +22,7 @@ Route::middleware(['auth'])->group(function () {
 
     Route::post('/logout',[LoginController::class, 'log_out'])->name('log_out');
     Route::get('/home',[DashboardController::class,'index'])->name('home');
+
+    Route::get('/alternatif',[AlternatifController::class,'index'])->name('alternatif');
 
 });

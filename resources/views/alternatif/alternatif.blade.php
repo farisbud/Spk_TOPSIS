@@ -5,7 +5,7 @@
 <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3">
     <div class="card" style="min-width: 100%">
         <div class="card-header">
-          Dashboard
+          Alternatif
         </div>
         <div class="card-body">
           <div class="row">

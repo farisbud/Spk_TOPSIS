@@ -15,9 +15,10 @@ class CreateAlternatifTable extends Migration
     {
         Schema::create('alternatif', function (Blueprint $table) {
             $table->id();
-            $table->string('nama_alternatif');
-            $table->string('kabupaten');
-            $table->string('provinsi');
+            $table->string('nik')->unique();
+            $table->string('nama_pegawai');
+            $table->string('telepon')->unique();
+            $table->string('email')->unique();
             $table->timestamps();
         });
     }

@@ -2,15 +2,15 @@
     <div class="position-sticky pt-3 sidebar-sticky ps-2">
       <ul class="nav flex-column">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">
+          <a class="nav-link active" aria-current="page" href="{{ route('home') }}">
             <img class="align-text-bottom" src="{{ asset('asset/icon/home.svg') }}" width="20" height="20" alt="home">
-            <span class="fs-6">Dashboard</span>
+            <span class="fs-6 mx-1">Dashboard</span>
           </a>
         </li>
         <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">
-              <img class="align-text-bottom" src="{{ asset('asset/icon/home.svg') }}" width="20" height="20" alt="home">
-              <span class="fs-6">Dashboard</span>
+            <a class="nav-link" aria-current="page" href="{{ route('alternatif') }}">
+              <img class="align-text-bottom" src="{{ asset('asset/icon/layers.svg') }}" width="20" height="20" alt="home">
+              <span class="fs-6 mx-1">Alternatif</span>
             </a>
           </li>
           <li class="nav-item">
